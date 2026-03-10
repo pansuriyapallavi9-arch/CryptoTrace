@@ -1,0 +1,5 @@
+User credentials found:
+admin@example.com
+https://suspicious-site.com/login
+Password hash: 5f4dcc3b5aa765d61d8327deb882cf99
+API Key: sk_live_51HxYz2eZvKYlo2C8qF3wN4vU0mC9h

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoTrace - Digital Evidence Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>🔍 CryptoTrace</h1>
+            <p class="tagline">Digital Evidence Analyzer for Information Security</p>
+            <p class="subtitle">Analyze files and text for encryption patterns, suspicious content, and digital forensics</p>
+        </header>
+
+        <div class="main-grid">
+            <!-- File Upload Section -->
+            <div class="card">
+                <h2>📁 File Analysis</h2>
+                <p class="card-description">Upload files to analyze for encryption, metadata, and suspicious patterns</p>
+                
+                <div class="upload-zone" id="dropZone">
+                    <div class="upload-icon">📤</div>
+                    <p><strong>Drag & Drop Files Here</strong></p>
+                    <p class="or-text">or</p>
+                    <button class="btn-secondary" onclick="document.getElementById('fileInput').click()">
+                        Browse Files
+                    </button>
+                    <p class="upload-info">
+                        Supported: .txt, .doc, .pdf, .jpg, .png, encrypted files, etc.
+                    </p>
+                </div>
+                <input type="file" id="fileInput" class="file-input" multiple>
+            </div>
+
+            <!-- Text Analysis Section -->
+            <div class="card">
+                <h2>📝 Text Analysis</h2>
+                <p class="card-description">Paste suspicious text, encrypted messages, or cipher text for analysis</p>
+                
+                <textarea id="textInput" placeholder="Paste your text here...
+
+Examples to try:
+- SGVsbG8gV29ybGQ= (Base64)
+- 48656c6c6f (Hexadecimal)
+- Uryyb Jbeyq (ROT13)
+- Any suspicious encrypted text"></textarea>
+                
+                <button class="btn" onclick="analyzeText()">
+                    🔍 Analyze Text
+                </button>
+            </div>
+
+            <!-- Results Section -->
+            <div class="card results-section" id="resultsSection" style="display: none;">
+                <h2>🔬 Analysis Results</h2>
+                <div id="resultsContainer"></div>
+            </div>
+
+            <!-- Case Records Section -->
+            <div class="card results-section">
+                <h2>📋 Case Records</h2>
+                <p class="card-description">All analyzed evidence is stored here for review</p>
+                
+                <div class="stats-bar">
+                    <div class="stat-item">
+                        <span class="stat-number" id="totalCases">0</span>
+                        <span class="stat-label">Total Cases</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number encrypted" id="encryptedCount">0</span>
+                        <span class="stat-label">Encrypted</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number suspicious" id="suspiciousCount">0</span>
+                        <span class="stat-label">Suspicious</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number clear" id="clearCount">0</span>
+                        <span class="stat-label">Clear</span>
+                    </div>
+                </div>
+
+                <div class="case-list" id="caseList">
+                    <div class="no-results">
+                        <div class="empty-icon">📂</div>
+                        <p>No evidence analyzed yet</p>
+                        <p class="empty-subtext">Start by uploading a file or analyzing text above</p>
+                    </div>
+                </div>
+                
+                <button class="btn-danger" onclick="clearAllCases()">
+                    🗑️ Clear All Cases
+                </button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>🔐 CryptoTrace v1.0 - Information Security Project</p>
+            <p class="footer-note">Built for educational purposes in digital forensics and cryptanalysis</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
