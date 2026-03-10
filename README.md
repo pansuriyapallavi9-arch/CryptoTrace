@@ -138,15 +138,8 @@ MIT License - See LICENSE file for details
 ## 👨‍💻 Author
 
 **Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
-- Email: your.email@example.com
-
-## 🙏 Acknowledgments
-
-- Information Security Course - [Your College Name]
-- Guided by: Dr. [Professor Name]
-- Inspired by real-world digital forensics challenges
+- GitHub: [@pansuriyapallavi9-arch](https://github.com/pansuriyapallavi-arch)
+- Email: pansuriyapallavi9@example.com
 
 ## 📚 References
 
